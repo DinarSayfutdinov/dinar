@@ -38,3 +38,12 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'heroku', '2.20.1'
+gem 'taps'
+
+# Just for Heroku
+group :production do
+  gem 'pg'
+  gem 'thin'
+end
